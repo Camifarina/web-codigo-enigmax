@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>Programa Inmortalidad · Acceso Restringido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grain"></div>
+  <div class="scanline"></div>
+
+  <!-- PANTALLA 1: ACCESO -->
+  <main id="pantalla-acceso" class="pantalla activa">
+
+    <div class="ficha">
+
+      <div class="ficha__header">
+        <span class="eyebrow">GOBIERNO DE LA UNIDAD GLOBAL</span>
+        <span class="ficha__linea"></span>
+      </div>
+
+      <div class="sello-wrap">
+        <div class="sello-anillo"></div>
+        <img src="logo.png" alt="Sello del Programa Inmortalidad" class="sello">
+      </div>
+
+      <h1 class="titulo">PROGRAMA<br>INMORTALIDAD</h1>
+      <p class="subtitulo">Ciencia y Eternidad</p>
+
+      <div class="separador">
+        <span></span>
+        <span class="separador__texto">TERMINAL DE VERIFICACIÓN · NIVEL RESTRINGIDO</span>
+        <span></span>
+      </div>
+
+      <form id="form-acceso" class="formulario" autocomplete="off">
+        <label for="usuario" class="etiqueta">INSERTE NOMBRE DE USUARIO</label>
+        <div class="campo">
+          <span class="campo__prompt">&gt;</span>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            class="campo__input"
+            placeholder="CLAVE DE ACCESO"
+            spellcheck="false"
+            autocapitalize="off"
+            autocorrect="off"
+            required
+          >
+        </div>
+
+        <button type="submit" class="boton">VALIDAR IDENTIDAD</button>
+
+        <p id="mensaje-error" class="mensaje-error" aria-live="polite"></p>
+      </form>
+
+      <div class="ficha__footer">
+        <span>EXP. N.° 0819-Ω</span>
+        <span>CLASIFICACIÓN: ULTRA</span>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- PANTALLA 2: RESULTADO -->
+  <main id="pantalla-resultado" class="pantalla">
+    <div class="resultado">
+      <div class="resultado__stamp">ACCESO CONCEDIDO</div>
+      <div class="resultado__marco">
+        <img src="resultado.jpg" alt="Documento clasificado" class="resultado__imagen" id="imagen-resultado">
+      </div>
+      <button id="boton-volver" class="boton boton--fantasma">CERRAR SESIÓN</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
