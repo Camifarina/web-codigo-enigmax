@@ -402,8 +402,8 @@ body {
   font-family: var(--fuente-display);
   font-size: clamp(18px, 3vw, 26px);
   letter-spacing: 0.2em;
-  color: var(--rojo-sello);
-  border: 3px solid var(--rojo-sello);
+  color: var(--verde-sello);
+  border: 3px solid var(--verde-sello);
   padding: 8px 22px;
   transform: rotate(-4deg);
   opacity: 0.9;
