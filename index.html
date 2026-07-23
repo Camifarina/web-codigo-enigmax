@@ -51,8 +51,16 @@
             spellcheck="false"
             autocapitalize="off"
             autocorrect="off"
+            autocomplete="off"
             required
           >
+          <button type="button" id="boton-mostrar" class="campo__toggle" aria-label="Mostrar clave" aria-pressed="false">
+            <svg class="icono-ojo" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path class="icono-ojo__abierto" d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <circle class="icono-ojo__abierto" cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <path class="icono-ojo__cerrado" d="M3 3l18 18M10.6 10.6a3 3 0 0 0 4.24 4.24M7.4 7.6C4.6 9.2 3 12 3 12s4 7 11 7c1.6 0 3-.37 4.24-.96M16.7 16.7C19.2 15 21 12 21 12s-1.4-2.45-4.06-4.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
         </div>
 
         <button type="submit" class="boton">VALIDAR IDENTIDAD</button>
@@ -74,7 +82,7 @@
     <div class="resultado">
       <div class="resultado__stamp">ACCESO CONCEDIDO</div>
       <div class="resultado__marco">
-        <img src="resultado.jpg" alt="Documento clasificado" class="resultado__imagen" id="imagen-resultado">
+        <img src="resultado.png" alt="Documento clasificado" class="resultado__imagen" id="imagen-resultado">
       </div>
       <button id="boton-volver" class="boton boton--fantasma">CERRAR SESIÓN</button>
     </div>

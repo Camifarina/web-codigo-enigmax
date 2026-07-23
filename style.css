@@ -275,6 +275,44 @@ body {
   letter-spacing: 0.1em;
 }
 
+.campo__toggle {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  margin-left: 4px;
+  color: var(--hueso-tenue);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+}
+
+.campo__toggle:hover {
+  color: var(--dorado-claro);
+}
+
+.campo__toggle:focus-visible {
+  outline: 1px solid var(--dorado);
+  outline-offset: 2px;
+}
+
+.icono-ojo__cerrado {
+  display: none;
+}
+
+.campo__toggle[aria-pressed="true"] .icono-ojo__abierto {
+  display: none;
+}
+
+.campo__toggle[aria-pressed="true"] .icono-ojo__cerrado {
+  display: block;
+}
+
+.campo__toggle[aria-pressed="true"] {
+  color: var(--dorado);
+}
+
 .boton {
   margin-top: 14px;
   background: var(--dorado);
