@@ -1,7 +1,3 @@
-/* =========================================================
-   PROGRAMA INMORTALIDAD — Terminal de Verificación
-   Paleta: azul institucional, dorado sello, blanco hueso
-   ========================================================= */
 
 :root {
   --azul-950: #0b1424;
@@ -12,7 +8,7 @@
   --dorado-claro: #e4c98a;
   --hueso: #f3efe4;
   --hueso-tenue: #c9c4b6;
-  --rojo-sello: #9c2b2b;
+  --rojo-sello: #78fea5;
 
   --fuente-display: 'Cinzel', serif;
   --fuente-mono: 'IBM Plex Mono', monospace;
