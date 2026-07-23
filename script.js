@@ -1,6 +1,3 @@
-// =========================================================
-// PROGRAMA INMORTALIDAD — Lógica de validación de acceso
-// =========================================================
 
 // La palabra clave se valida sin distinguir mayúsculas/minúsculas.
 const PALABRA_CLAVE = "ALEXIS";
